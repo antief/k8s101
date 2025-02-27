@@ -1,3 +1,16 @@
+/*Background*/
+body {
+	background:
+		linear-gradient(var(--overlay-color),
+			var(--overlay-color)),
+		url('../assets/Dall-e_kubernetes.webp');
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 /* Dark mode colors. */
 :root {
 	--overlay-color: rgba(17, 23, 41, 0.98);
@@ -48,16 +61,5 @@
 	height: 100%;
 	border: 0;
 }
-  /*Background*/
-  body {
-	background:
-	  linear-gradient(
-		var(--overlay-color),
-		var(--overlay-color)
-	  ),
-	  url('./src/assets/Dall-e_kubernetes.webp');
-  
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-  }
+
+

@@ -6,15 +6,12 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	experimental: {
-		responsiveImages: true,
-	},
 	server: { host: true },
 	integrations: [
 		starlight({
 			title: 'Kubernetes 101',
 			logo: {
-				src: './src/assets/kubernetes-horizontal-all-blue-color.png',
+				src: './src/assets/kubernetes-icon-color.png',
 				replacesTitle: true,
 			},
 			customCss: [

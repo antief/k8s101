@@ -2,7 +2,7 @@
     {
         "id": 1,
         "text": "Koti",
-        "link": "/arkkitehtuuri/yleiskuvaus"
+        "link": "/johdanto/kubernetes"
     },
     {
         "id": 2,
@@ -11,7 +11,7 @@
     },
     {
         "id": 3,
-        "text": "Kontaktoi",
-        "link": "/muut/kontaktoi"
+        "text": "Yhteystiedot",
+        "link": "/muut/yhteystiedot"
     }
 ]
