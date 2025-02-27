@@ -8,6 +8,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Kubernetes 101',
+			customCss: [
+				'./src/styles/custom.css',
+			],
+
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
