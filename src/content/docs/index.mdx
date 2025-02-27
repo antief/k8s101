@@ -3,22 +3,21 @@ title: Tervetuloa oppimaan Kubernetes klusterointia
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Onko Kubernetes ollut sinulle aina mysteeri? Näiltä sivuilta löydät sen perustiedot tiiviissä paketissa.
+  tagline: Onko Kubernetes ollut sinulle aina mysteeri? Näiltä sivuilta löydät avun!
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/kubernetes-icon-color.png
   actions:
     - text: Tiedän jo perusasiat
-      link: /arkkitehtuuri/control-plane/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+      link: /koodi-esimerkit/hello-world/
+      icon: rocket
+    - text: tämä on testi
+      link: localhost
+      icon: rocket
+      variant: primary
+ 
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
-
-## Next steps
 
 <CardGrid stagger>
 	<Card title="Update content" icon="pencil">
@@ -34,3 +33,37 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
+
+
+## Mikä Kubernetes?
+
+
+Kubernetes on konttien orkestrointialusta, joka on noussut tärkeäksi työkaluksi nykyaikaisten, 
+pilvipohjaisten ja skaalautuvien sovellusten kehittämisessä. Sen tehtävä on automatisoida konttien
+(esimerkiksi Docker-konttien) ajaminen, hallinta ja verkottaminen. Kubernetes mahdollistaa sovellusten 
+dynaamisen skaalaamisen, itsekorjaavuuden ja joustavan käyttöönoton eri ympäristöissä.
+
+Kubernetesin historia juontaa juurensa Googlen sisäisiin järjestelmiin (Borg ja Omega), ja nykyään 
+se on avoimen lähdekoodin projekti, jota hallinnoi Cloud Native Computing Foundation (CNCF). Ympäri 
+maailmaa on laaja yhteisö, joka kehittää ja tukee Kubernetesia. Monien yritysten valinta 
+konttiorkestroinnissa on juuri Kubernetes, koska se on laajalti dokumentoitu, tuettu ja käytetty 
+eri pilvialustoilla sekä paikallisissa ympäristöissä.
+
+<div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/cC46cg5FFAM?si=d0hNFiDkVXXMLmbK"
+    title="YouTube video player"
+    allowfullscreen>
+  </iframe>
+</div>
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton
+  href="/arkkitehtuuri/yleiskuvaus"
+  variant="secondary"
+  icon="document"
+  iconPlacement="start"
+>
+  Dokumentaatioon
+</LinkButton>
