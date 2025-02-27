@@ -24,16 +24,21 @@ export default defineConfig({
 
 				{
 					label: 'Arkkitehtuuri',
-					autogenerate: { directory: 'arkkitehtuuri' },
+					items: [
+						// Static order of items
+						{ label: 'Yleiskuvaus', slug: 'arkkitehtuuri/high-level' },
+						{ label: 'Control Plane', slug: 'arkkitehtuuri/control-plane' },
+						{ label: 'Worker Nodes', slug: 'arkkitehtuuri/worker-nodes' },
+
+					],
 				},
 
 				{
-					label: 'Komponentit',
-					collapsed: false,
+					label: 'Komponentit',	
 					autogenerate: { directory: 'komponentit' },
-					
 				},
 
+				
 				{
 					label: 'Objektit',
 					autogenerate: { directory: 'objektit' },
@@ -44,14 +49,6 @@ export default defineConfig({
 					autogenerate: { directory: 'koodi-esimerkit' },
 				},
 
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-
-				},
 				{
 					label: 'Lähteet',
 					autogenerate: { directory: 'reference' },
