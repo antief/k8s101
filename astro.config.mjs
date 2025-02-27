@@ -12,15 +12,44 @@ export default defineConfig({
 				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
+
+				{
+					label: 'Johdanto',
+					autogenerate: { directory: 'johdanto' },
+				},
+
+				{
+					label: 'Arkkitehtuuri',
+					autogenerate: { directory: 'arkkitehtuuri' },
+				},
+
+				{
+					label: 'Komponentit',
+					collapsed: false,
+					autogenerate: { directory: 'komponentit' },
+					
+				},
+
+				{
+					label: 'Objektit',
+					autogenerate: { directory: 'objektit' },
+				},
+
+				{
+					label: 'Koodi esimerkit',
+					autogenerate: { directory: 'koodi-esimerkit' },
+				},
+
 				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
+
 				},
 				{
-					label: 'Reference',
+					label: 'Lähteet',
 					autogenerate: { directory: 'reference' },
 				},
 			],
