@@ -6,8 +6,11 @@ author: 'Antti'
 
 Seuraavassa on yksinkertainen “Hello World” -sovellus, joka havainnollistaa Kubernetes-objektien käyttöä. Se sisältää **Deployment**-resurssin ja **Service**-resurssin, jonka tyyppinä on `LoadBalancer`.
 
-> Huom. Jos ajat Kubernetesia paikallisesti (esim. Minikube), `LoadBalancer`-tyyppi ei välttämättä tuo julkista IP-osoitetta. Voit silti testata toimintaa käyttämällä esim. `minikube service hello-service`.
+:::note
 
+Huom. Jos ajat Kubernetesia paikallisesti (esim. Minikube), `LoadBalancer`-tyyppi ei välttämättä tuo julkista IP-osoitetta. Voit silti testata toimintaa käyttämällä esim. `minikube service hello-service`.
+
+:::
 Luodaan hello-world.yaml seuraavalla sisällöllä:
 
 

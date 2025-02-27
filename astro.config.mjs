@@ -31,22 +31,26 @@ export default defineConfig({
 				{
 					label: 'Komponentit',	
 					autogenerate: { directory: 'komponentit' },
+					collapsed: true,
 				},
 
 				
 				{
 					label: 'Objektit',
 					autogenerate: { directory: 'objektit' },
+					collapsed: true,
 				},
 
 				{
 					label: 'Koodi esimerkit',
 					autogenerate: { directory: 'koodi-esimerkit' },
+					collapsed: true,
 				},
 
 				{
 					label: 'Lähteet',
 					autogenerate: { directory: 'reference' },
+					collapsed: true,
 				},
 			],
 		}),
