@@ -2,6 +2,7 @@
 title: 'Hello world esimerkki'
 author: 'Antti'
 ---
+## Esimerkki koodi
 
 Seuraavassa on yksinkertainen “Hello World” -sovellus, joka havainnollistaa Kubernetes-objektien käyttöä. Se sisältää **Deployment**-resurssin ja **Service**-resurssin, jonka tyyppinä on `LoadBalancer`.
 
@@ -45,10 +46,15 @@ spec:
 ```
 
 
+## Lisääminen klusteriin
+
 Lisätään sovellus klusteriin komennolla:
 ```
 kubectl apply -f hello-world.yaml
 ```
+
+
+## Vahvistetaan ohjelman lisäys
 
 Tarkistetaan sovelluksen toiminta seuraavilla komennoilla:
 

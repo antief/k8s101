@@ -1,5 +1,7 @@
 ---
-title: 'Control Plane - Hallintakeskus'
+sidebar:
+    order: 2
+title: 'Control Plane'
 author: 'Antti'
 ---
 

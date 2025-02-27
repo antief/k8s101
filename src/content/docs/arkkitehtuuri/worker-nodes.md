@@ -1,5 +1,7 @@
 ---
-title: 'Worker nodes - Työntekijät'
+sidebar:
+    order: 3
+title: 'Worker nodes'
 author: 'Antti'
 ---
 

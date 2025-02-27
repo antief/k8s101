@@ -1,5 +1,7 @@
 ---
-title: 'Korkean tason arkkitehtuuri'
+sidebar:
+    order: 1
+title: 'Yleiskuvaus'
 author: 'Antti'
 ---
 

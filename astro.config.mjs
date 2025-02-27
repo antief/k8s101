@@ -24,13 +24,8 @@ export default defineConfig({
 
 				{
 					label: 'Arkkitehtuuri',
-					items: [
-						// Static order of items
-						{ label: 'Yleiskuvaus', slug: 'arkkitehtuuri/high-level' },
-						{ label: 'Control Plane', slug: 'arkkitehtuuri/control-plane' },
-						{ label: 'Worker Nodes', slug: 'arkkitehtuuri/worker-nodes' },
+					autogenerate: { directory: 'arkkitehtuuri' },
 
-					],
 				},
 
 				{
