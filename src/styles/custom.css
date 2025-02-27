@@ -1,5 +1,6 @@
 /* Dark mode colors. */
 :root {
+	--overlay-color: rgba(17, 23, 41, 0.98);
 	--sl-color-accent-low: #002932;
 	--sl-color-accent: #00778b;
 	--sl-color-accent-high: #94d5e5;
@@ -15,6 +16,7 @@
 
 /* Light mode colors. */
 :root[data-theme='light'] {
+	--overlay-color: rgba(255, 255, 255, 0.95);
 	--sl-color-accent-low: #b1e0ec;
 	--sl-color-accent: #007488;
 	--sl-color-accent-high: #003944;
@@ -46,3 +48,16 @@
 	height: 100%;
 	border: 0;
 }
+  /*Background*/
+  body {
+	background:
+	  linear-gradient(
+		var(--overlay-color),
+		var(--overlay-color)
+	  ),
+	  url('./src/assets/Dall-e_kubernetes.webp');
+  
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  }

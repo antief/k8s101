@@ -1,10 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+
 import starlight from '@astrojs/starlight';
 
 
 // https://astro.build/config
 export default defineConfig({
+	experimental: {
+		responsiveImages: true,
+	},
 	server: { host: true },
 	integrations: [
 		starlight({
@@ -24,6 +28,7 @@ export default defineConfig({
 				'x.com': 'https://www.x.com/'
 
 			},
+
 
 			components: {
 				SiteTitle: './src/starlightOverrides/SiteTitle.astro',
