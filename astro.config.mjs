@@ -7,7 +7,7 @@ export default defineConfig({
 	server: { host: true},
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Kubernetes 101',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
