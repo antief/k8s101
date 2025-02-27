@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "text": "Koti",
+        "link": "/arkkitehtuuri/yleiskuvaus"
+    },
+    {
+        "id": 2,
+        "text": "Tietoa sivusta",
+        "link": "/muut/tietoa"
+    },
+    {
+        "id": 3,
+        "text": "Kontaktoi",
+        "link": "/muut/kontaktoi"
+    }
+]

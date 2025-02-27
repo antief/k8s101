@@ -1,0 +1,42 @@
+---
+// src/starlightOverrides/SiteTitle.astro
+import Default from '@astrojs/starlight/components/SiteTitle.astro';
+import links from '../data/links.json';
+---
+
+<div>
+  <!-- Renders the default site title (logo + text) -->
+  <Default {...Astro.props} />
+
+  <!-- Your custom header nav from links.json -->
+  <ul>
+    {links.map((link) => (
+       <li data-id={link.id}>
+        <a href={link.link}>{link.text}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  div {
+    display: flex;
+    align-items: center;
+    gap: var(--sl-nav-gap);
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: var(--sl-nav-gap);
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--sl-color-text-accent);
+  }
+  a:hover,
+  a:focus {
+    color: var(--sl-color-white);
+  }
+</style>

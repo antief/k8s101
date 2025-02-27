@@ -2,15 +2,16 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+
 // https://astro.build/config
 export default defineConfig({
-	
-	server: { host: true},
+	server: { host: true },
 	integrations: [
 		starlight({
-			title: '',
+			title: 'Kubernetes 101',
 			logo: {
 				src: './src/assets/kubernetes-horizontal-all-blue-color.png',
+				replacesTitle: true,
 			},
 			customCss: [
 				'./src/styles/custom.css',
@@ -23,7 +24,13 @@ export default defineConfig({
 				'x.com': 'https://www.x.com/'
 
 			},
+
+			components: {
+				SiteTitle: './src/starlightOverrides/SiteTitle.astro',
+			},
+
 			sidebar: [
+
 
 				{
 					label: 'Johdanto',
@@ -37,12 +44,12 @@ export default defineConfig({
 				},
 
 				{
-					label: 'Komponentit',	
+					label: 'Komponentit',
 					autogenerate: { directory: 'komponentit' },
 					collapsed: true,
 				},
 
-				
+
 				{
 					label: 'Objektit',
 					autogenerate: { directory: 'objektit' },
@@ -60,7 +67,9 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 					collapsed: true,
 				},
+
 			],
+
 		}),
 	],
 });
