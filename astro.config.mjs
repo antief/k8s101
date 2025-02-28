@@ -13,17 +13,17 @@ export default defineConfig({
 		starlight({
 			title: 'Kubernetes 101',
 			logo: {
-				src: './src/assets/kubernetes-icon-color.png',
+				src: '/k8s101/src/assets/kubernetes-icon-color.png',
 				replacesTitle: true,
 			},
 			favicon: '/favicon.png',
 			customCss: [
-				'./src/styles/custom.css',
+				'/k8s101/src/styles/custom.css',
 			],
 
 			social: {
 				facebook: 'https://www.facebook.com/',
-				github: 'https://github.com/',
+				github: 'https://github.com/antief/k8s101',
 				rss: 'https://rss.com',
 				'x.com': 'https://www.x.com/'
 
@@ -31,7 +31,7 @@ export default defineConfig({
 
 
 			components: {
-				SiteTitle: './src/starlightOverrides/SiteTitle.astro',
+				SiteTitle: '/k8s101/src/starlightOverrides/SiteTitle.astro',
 			},
 
 
