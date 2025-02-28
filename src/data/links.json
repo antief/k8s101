@@ -2,16 +2,16 @@
     {
         "id": 1,
         "text": "Koti",
-        "link": "/johdanto/kubernetes"
+        "link": "/k8s101/johdanto/kubernetes"
     },
     {
         "id": 2,
         "text": "Tietoa sivusta",
-        "link": "/muut/tietoa"
+        "link": "/k8s101/muut/tietoa"
     },
     {
         "id": 3,
         "text": "Yhteystiedot",
-        "link": "/muut/yhteystiedot"
+        "link": "/k8s101/muut/yhteystiedot"
     }
 ]
