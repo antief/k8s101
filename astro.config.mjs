@@ -14,6 +14,7 @@ export default defineConfig({
 				src: './src/assets/kubernetes-icon-color.png',
 				replacesTitle: true,
 			},
+			favicon: '/favicon.png',
 			customCss: [
 				'./src/styles/custom.css',
 			],
@@ -31,17 +32,22 @@ export default defineConfig({
 				SiteTitle: './src/starlightOverrides/SiteTitle.astro',
 			},
 
+
 			sidebar: [
 
 
 				{
 					label: 'Johdanto',
 					autogenerate: { directory: 'johdanto' },
+					collapsed: true,
+
 				},
 
 				{
 					label: 'Arkkitehtuuri',
 					autogenerate: { directory: 'arkkitehtuuri' },
+					collapsed: true,
+
 
 				},
 

@@ -1,8 +1,9 @@
 ---
 sidebar:
     order: 1
-title: 'Yleiskuvaus'
+title: 'Johdanto'
 author: 'Antti'
+next: false
 setup: |
   import { Picture } from "astro-imagetools/components";
 ---
