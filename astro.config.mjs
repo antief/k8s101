@@ -6,6 +6,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://AHanhela.github.io',
+	base: 'k8s101',
 	server: { host: true },
 	integrations: [
 		starlight({
