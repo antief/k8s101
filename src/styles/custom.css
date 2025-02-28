@@ -3,7 +3,7 @@ body {
 	background:
 		linear-gradient(var(--overlay-color),
 			var(--overlay-color)),
-		url('../assets/Dall-e_kubernetes.webp');
+		url('/src/assets/Dall-e_kubernetes.webp');
 
 	background-repeat: no-repeat;
 	background-position: center;
