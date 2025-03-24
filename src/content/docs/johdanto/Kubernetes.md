@@ -8,7 +8,7 @@ setup: |
   import { Picture } from "astro-imagetools/components";
 ---
 
-![Kubernetes](/src/assets/kubernetes-horizontal-all-blue-color.png)
+![Kubernetes](https://raw.githubusercontent.com/cncf/artwork/refs/heads/main/projects/kubernetes/horizontal/all-blue-color/kubernetes-horizontal-all-blue-color.png)
 
 Kubernetes on konttien orkestrointialusta, joka on noussut tärkeäksi työkaluksi nykyaikaisten, 
 pilvipohjaisten ja skaalautuvien sovellusten kehittämisessä. Sen tehtävä on automatisoida konttien
